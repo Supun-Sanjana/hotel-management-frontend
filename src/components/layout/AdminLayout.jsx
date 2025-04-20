@@ -12,16 +12,20 @@ const AdminLayout = () => {
   return (
     <div className="flex min-h-screen">
       {/* Sidebar */}
-      <aside className="w-64 bg-gray-800 text-white p-4">
+      <aside className="w-64 bg-[#2B1B12] text-white p-4">
         <h2 className="text-2xl font-bold mb-6">Serenity Admin</h2>
+
+       
+
+
         <nav className="flex flex-col gap-4">
           <NavLink
             to="/admin/bookings"
             className={({ isActive }) =>
               `flex items-center gap-2 ${
                 isActive
-                  ? "text-cyan-300 font-semibold"
-                  : "hover:text-cyan-300 hover:font-bold"
+                  ? "text-[#DDC7BB] font-semibold"
+                  : "hover:text-[#DDC7BB] hover:font-bold"
               }`
             }
           >
@@ -34,8 +38,8 @@ const AdminLayout = () => {
             className={({ isActive }) =>
               `flex items-center gap-2 ${
                 isActive
-                  ? "text-cyan-300 font-semibold"
-                  : "hover:text-cyan-300 hover:font-bold"
+                  ? "text-[#DDC7BB] font-semibold"
+                  : "hover:text-[#DDC7BB] hover:font-bold"
               }`
             }
           >
@@ -48,8 +52,8 @@ const AdminLayout = () => {
             className={({ isActive }) =>
               `flex items-center gap-2 ${
                 isActive
-                  ? "text-cyan-300 font-semibold"
-                  : "hover:text-cyan-300 hover:font-bold"
+                  ? "text-[#FEF7F2] font-semibold"
+                  : "hover:text-[#DDC7BB] hover:font-bold"
               }`
             }
           >
@@ -62,8 +66,8 @@ const AdminLayout = () => {
             className={({ isActive }) =>
               `flex items-center gap-2 ${
                 isActive
-                  ? "text-cyan-300 font-semibold"
-                  : "hover:text-cyan-300 hover:font-bold"
+                  ? "text-[#FEF7F2] font-semibold"
+                  : "hover:text-[#DDC7BB] hover:font-bold"
               }`
             }
           >
@@ -77,8 +81,8 @@ const AdminLayout = () => {
             className={({ isActive }) =>
               `flex items-center gap-2 ${
                 isActive
-                  ? "text-cyan-300 font-semibold"
-                  : "hover:text-cyan-300 hover:font-bold"
+                  ? "text-[#FEF7F2] font-semibold"
+                  : "hover:text-[#DDC7BB] hover:font-bold"
               }`
             }
           >
@@ -92,8 +96,8 @@ const AdminLayout = () => {
             className={({ isActive }) =>
               `flex items-center gap-2 ${
                 isActive
-                  ? "text-cyan-300 font-semibold"
-                  : "hover:text-cyan-300 hover:font-bold"
+                  ? "text-[#FEF7F2] font-semibold"
+                  : "hover:text-[#DDC7BB] hover:font-bold"
               }`
             }
           >
@@ -104,7 +108,7 @@ const AdminLayout = () => {
       </aside>
 
       {/* Main Content */}
-      <main className="flex-1 bg-gray-100 p-6">
+      <main className="flex-1 bg-text-[#FFDFC8] p-6 overflow-y-scroll max-h-[100vh]">
         <Outlet />
       </main>
     </div>

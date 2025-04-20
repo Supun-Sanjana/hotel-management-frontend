@@ -21,6 +21,7 @@ function App() {
         <Route path="/admin" element={<AdminLayout />}>
           <Route index element={<AdminDashboard />} />
           <Route path="rooms" element={<Rooms />} />
+          <Route path="dashboard" element={<AdminDashboard />} />
           <Route path="bookings" element={<Booking />} />
           <Route path="category" element={<Category />} />
           <Route path="users" element={<Users />} />
