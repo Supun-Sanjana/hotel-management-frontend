@@ -1,10 +1,10 @@
 import React from 'react';
+import Header from '../../header/header';
 
 const HomePage = () => {
   return (
-    <div style={{ padding: '2rem', textAlign: 'center' }}>
-      <h1>Welcome to Serenity Stay 🏨</h1>
-      <p>This is the homepage of your hotel management system.</p>
+    <div>
+      <Header></Header>
     </div>
   );
 };

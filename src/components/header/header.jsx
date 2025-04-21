@@ -1,14 +1,22 @@
 import UserTag from "../userData";
-import "./header.css";
 
 function Header() {
   return (
-    <header>
-      <h1 className='text-red-500'>Hotel management system</h1>
-      <UserTag
-        name="San"
-        img="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMMAAACUCAMAAAAZKm3XAAAAMFBMVEXk5ueutLenrrHn6eqqsbTh4+TCx8nd4OHq7O20ubzIzM64vcC/xMbP09TZ3N3U19mupoR+AAAEqUlEQVR4nO2c27qjIAxGxYCc4f3fdsA6uyfbCkSD/bpuZvZd/oYEDAnD8OPHjx8/flAAQG1BA5CslzJIKYWY/zgbADKaydkLzk0+inPJUNI4zRhPMLb8q7U1Qp1EBqhoZ9NX0PEMzoDB8/GFgsTIPLWFnwDh9RsFswrtRce+AHi9im5V2Eht6UtAGLZBQopxZjp1BYQtTliwskcREPR2CckVoUMRsUBBZvTdifAf0tEJRJRL6E0E+MKFtNDRfge+SsF89KC2fSFlpEoN/aRY4epWUoI7auMXTEU8/2c01NZnINQryJ7oYq8rOGGsadD0GqBmZ7ilg10CmryQ0dQSlGnWwAyxI0S7BKYlqQQw7RKoHSGqd+gbuBWEEqoPSg+QHpsmhHBIjpjoFIBs29/+sHRRjbWUSA8cCJvDDOHJT9Yfuu/hlkxD/bfPE1TZFQKSG9JiCkQaqooZLzRQVQcEVkjnHYIqMWGFdMISaRBIO1yG6msO5cC3wKk04ElgI5UGvKX0HRpoJPw0PGr4xXS9hm/IrV+wx33FWQOnIpChO/NV3sKtaSC7mYt43w9U30CNtyd3kFX6vqEmgFab4XS1mdqr9SdGuoYmkBZHA2GtEmuX4xNh8R6r4Ep6rYh0h0J6mQUTggbqS0V5/jvFQbl2DY76kh3az0yUN4ozqqVrJsOpr9gzJS2ha3QgAUqbQh/c0EU7XNPn3Eh4rXtLww0vp86r/2noSdRddJFl6jtP6Puv/oDKj6Ee0uqVml2ij57KK1AuYiSrKb2kdDn15oWZMhG8o3C+AnH7qYP3k1TvAeG2zjS5XnrVnwDwW7Zsrn3P04ogP46Xjcx064QLMEjzbtaSsykMfUuYEWYcV53BR27IP9o2olRwbGVNTeEss8cZUCD9ZK1esNb5AIrarGLmWfwQYghBijPO4mcFCXXh8ge1SdvJhoNIv783xkwX0v98jEEOsxxqC9+SrB9k9C6FwWpizYEx+ZCVUJu6DuQoZiP/tFHnBxKcCZ29u5GMEdI49mJXWN8pRj2F/O4GtfEZSGvfT/rz77+ig6WEK8llwBCM09t//2cZ1kRJuaxAeKfLHXAvg+skg8gZoKLT274XPslg2lKcxpMCxO6lzPFPPXiG1quxwPl0YN1yw2MmdSrS19ExgQEi2j0U/Kk4gOgaM9F7FXb3uAC5sXTRgN33VkXFne2/4PZLtNA47r2d/WbN4p6B8CBily6U/DDRgXCL7wpA63vbKkJjF5VL6sFYItiEWgdJ+ehoCVkFZn7CeDSgSoRFO3rU3hhiiMDatA9NSI8icGrkhBKQPIHWw1otol1CW1cMhgjXmGIBo1+PWATmyE89bTv2wQeMFzRdBJOmpCsNTbwNfUnI1M8WNLyVhk7trA15Wr3Ca2fPqA2/pe7FL4U3/YZB3UDpXoWwOrgp3+lURwF9obhKAJLa5CeKHaFQhjNQ0aWOEEgTV5gUpia016EQKX5jtLuIZsVHP6zhPVTKpj3gmPp2IYVFWLJqzFuKjuA9nVhvKCrpdxkOZRP7iA+NoVIUEHgPBaBStEP0GdIpqLf7AfHhDGQK1pIdO6UguYpOu4HXzfoHxL5DQ+GSU6IAAAAASUVORK5CYII="
-      />
+    <header className="px-6 py-4 shadow-md bg-white flex items-center justify-between">
+      <h1 className="text-2xl font-extrabold text-gray-800">Serenity Stay</h1>
+
+      <nav className="flex gap-6 text-gray-600 font-medium">
+        <a href="#" className="hover:text-blue-500 transition">Home</a>
+        <a href="#" className="hover:text-blue-500 transition">Rooms</a>
+        <a href="#" className="hover:text-blue-500 transition">Services</a>
+        <a href="#" className="hover:text-blue-500 transition">Booking</a>
+        <a href="#" className="hover:text-blue-500 transition">About</a>
+        <a href="#" className="hover:text-blue-500 transition">Contact</a>
+      </nav>
+
+      <button className="ml-6 bg-[#2B1B12] hover:bg-blue-600 text-white px-4 py-2 rounded-xl transition">
+        Sign up
+      </button>
     </header>
   );
 }
